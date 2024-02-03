@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'HelveticaNeueLTProHv';
+    src: url('/assets/fonts/HelveticaNeueLTPro-Hv.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProTh';
+    src: url('/assets/fonts/HelveticaNeueLTPro-Th.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProLt';
+    src: url('/assets/fonts/HelveticaNeueLTPro-Lt.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProMdCnO';
+    src: url('/assets/fonts/HelveticaNeueLTPro-MdCnO.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProMd';
+    src: url('/assets/fonts/HelveticaNeueLTPro-Md.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProBd';
+    src: url('/assets/fonts/HelveticaNeueLTPro-Bd.otf')
+}
+@font-face {
+    font-family: 'HelveticaNeueLTProBdCn';
+    src: url('/assets/fonts/HelveticaNeueLTPro-BdCn.otf')
+}
+/* Preset CSS Styling Start's Here */
+
+
+/*
+ v1.0
+Author: Irfan Ali - 
+Email : engr.irfanali970@gmail.com */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.redTxt{
+    color: var(--red);
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+input,
+select {
+    vertical-align: middle;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+
+/* Preset CSS Styling End's Here */
+body{
+    font-family: 'HelveticaNeueLTProLt';
+}
+/* Header Styling Starts Here */
+
+    .topNavWrap{
+        background-image: url("/assets/images/headerbg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .topNavWrap::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000059;
+        content: "";
+    }
+    .nrlist {
+        display: flex;
+        list-style: none;
+    }
+    
+    .topNav {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .nrlist>.nrItem {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 14px;
+        border-left: 1px solid #fff;
+        font-size: 14px;
+        max-width: 100px;
+        text-align: center;
+        /* width: 100%; */
+        flex: 0 0 calc(100% / 5);
+        line-height: 1.2;
+        cursor: pointer;
+        font-family: 'HelveticaNeueLTProMdCnO';
+        transition: ease-in-out .35s;
+    
+    }
+    .siteLogo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: -50px;
+        position: absolute;
+        left: -100px;
+        bottom: -20px;
+
+    }
+    .siteLogo img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .nrlist>.nrItem a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .nrlist>.nrItem:hover {
+        background: #00aeef;
+    }
+    .navIcon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .navIcon>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .navTxt{
+        width: 100%;
+    }
+    .navLeft {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .siteTitle {
+        font-family: 'HelveticaNeueLTProHv';
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .nrlist>.nrItem:last-child {
+        border-right: 1px solid #fff;
+    }
+    .bnList {
+        list-style: none;
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+    }
+    li.bnItem {
+        padding: 10px 10px;
+    }
+    
+    .bncntct {
+        max-width: 170px;
+        width: 100%;
+        text-align: center;
+    }
+    .bncntct>a{
+        color: #000;
+    }
+    li.bnItem:first-child {
+        padding-left: 0;
+    }
+    .bottomNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: HelveticaNeueLTProBd;
+        font-size: 16px;
+    }
+    .bottomNavWrap{
+        background: #ec008c;
+        color: #fff;
+    }
+    .hedngOne {
+        font-family: HelveticaNeueLTProHv;
+    }
+    .hedngTwo {
+        font-family: HelveticaNeueLTProHv;
+    }
+    .gryTxt{
+        color: #a7a9ac;
+    }
+    .prmryCntnt{
+        font-size: 16px;
+    }
+    .prmryCntnt.md{
+        font-size: 20px;
+        font-family: HelveticaNeueLTProMd;
+    }
+    .prmryClr{
+        color: #00aeef !important;
+    }
+    .whteClr{
+        color: #fff !important;
+    }
+    
+    .btnPrmry{
+        display: inline-block;
+        background: #00aeef;
+        text-align: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 18px;
+        border: 1px solid #00aeef;
+        font-family: HelveticaNeueLTProMd;
+        color: #fff;
+    }
+    .btnScndry{
+        display: inline-block;
+        background: #ec008c;
+        text-align: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 18px;
+        border: 1px solid #ec008c;
+        font-family: HelveticaNeueLTProMd;
+        color: #fff;
+    }
+    .clturImg>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+/* Header Styling Ends Here */
+/* Main Styling Starts Here */
+
+.whCoseSec{
+    position: relative;
+    padding: 50px 0;
+    background-image: url("/assets/images/whyUsImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whCoseSec::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000000a6;
+}
+.loyltySec{
+    background-image: url("/assets/images/loyltySecImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* Main Styling Ends Here */
+.ftrSec{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+.sclIcnList {
+    display: flex;
+    list-style: none;
+}
+
+.flImg {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.flImg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sclIcnList>li {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.fotrLeft{
+    display: flex;
+    align-items: center;
+}
+.ftListWrap {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ftList {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ftList>li {
+    margin: 6px 16px;
+    font-family: HelveticaNeueLTProBd;
+    font-size: 14px;
+    position: relative;
+}
+.ftList>li + li::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ftList>li:last-child{
+    margin-right: 0px;
+}
+.ftTxt {
+    font-size: 12px;
+}
