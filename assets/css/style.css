@@ -240,21 +240,30 @@ body{
     .nrlist>.nrItem:last-child {
         border-right: 1px solid #fff;
     }
+    .bnlWrap {
+        flex: 1 0 auto;
+    }
     .bnList {
         list-style: none;
     display: flex;
-    max-width: 500px;
-    width: 100%;
-    justify-content: space-between;
+    /* max-width: 500px; */
+    /* width: 100%; */
+    justify-content: flex-start;
     }
-    li.bnItem {
-        padding: 10px 10px;
+    .bnItem {
+        padding: 10px 20px;
     }
-    
+    .bnItem>a{
+        color: inherit;
+    }
+    .bnsWrap{
+        display: flex;
+    }
     .bncntct {
-        max-width: 170px;
+        max-width: 230px;
         width: 100%;
         text-align: center;
+        padding: 0px 35px;
     }
     .bncntct>a{
         color: #000;
@@ -279,6 +288,10 @@ body{
     .hedngTwo {
         font-family: HelveticaNeueLTProHv;
     }
+    .headingThree{
+        font-family: HelveticaNeueLTProMd;
+        font-size: 26px;
+    }
     .gryTxt{
         color: #a7a9ac;
     }
@@ -291,6 +304,9 @@ body{
     }
     .prmryClr{
         color: #00aeef !important;
+    }
+    .scndryClr{
+        color: #ec008c !important;
     }
     .whteClr{
         color: #fff !important;
@@ -317,6 +333,18 @@ body{
         outline: none;
         font-size: 18px;
         border: 1px solid #ec008c;
+        font-family: HelveticaNeueLTProMd;
+        color: #fff;
+    }
+    .drkBtn{
+        display: inline-block;
+        background: #231f20;
+        text-align: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 18px;
+        border: 1px solid #231f20;
         font-family: HelveticaNeueLTProMd;
         color: #fff;
     }
@@ -426,4 +454,25 @@ body{
 }
 .ftTxt {
     font-size: 12px;
+}
+.contactFrom{
+    background-image: url("/assets/images/loyltySecImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cstField>input, .cstField>select, .cstField>textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+select option[value=""]{
+    color: #a7a9ac;
+}
+.mapImg>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
