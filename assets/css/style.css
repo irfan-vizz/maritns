@@ -292,14 +292,25 @@ body{
         font-family: HelveticaNeueLTProMd;
         font-size: 26px;
     }
+    .hedngFour{
+        font-family: HelveticaNeueLTProMd;
+        font-size: 22px;
+    }
     .gryTxt{
         color: #a7a9ac;
+    }
+    .dslmrTxt{
+        font-size: 14px; 
     }
     .prmryCntnt{
         font-size: 16px;
     }
     .prmryCntnt.md{
         font-size: 20px;
+        font-family: HelveticaNeueLTProMd;
+    }
+    .prmryCntnt.xl{
+        font-size: 30px;
         font-family: HelveticaNeueLTProMd;
     }
     .prmryClr{
@@ -310,6 +321,9 @@ body{
     }
     .whteClr{
         color: #fff !important;
+    }
+    .drkClr{
+        color: #000 !important;
     }
     
     .btnPrmry{
@@ -347,6 +361,27 @@ body{
         border: 1px solid #231f20;
         font-family: HelveticaNeueLTProMd;
         color: #fff;
+    }
+    .grayBtn{
+        display: inline-block;
+        background: #d1d2d4;
+        text-align: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 18px;
+        border: 1px solid #d1d2d4;
+        font-family: HelveticaNeueLTProMd;
+        color: #fff;
+        cursor: pointer;
+    }
+    .rmveBtn {
+        border: none;
+        outline: none;
+        color: #c30000;
+        background: transparent;
+        font-size: 14px;
+        display: inline-block;
     }
     .clturImg>img{
         width: 100%;
@@ -475,4 +510,169 @@ select option[value=""]{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.tcFtr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.tstmnalCrd {
+    padding: 30px 30px;
+}
+
+.tstmnalCrd:nth-child(odd) {
+    background: #f7f7f7;
+}
+.tpInr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tpPges {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.tpSingPg, .vewAllTstmnal {
+    margin: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+.pfField > input,.pfField > select, .pfField > textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #a7a9ac;
+    transition: ease-in-out .35s;
+    margin-bottom: 30px;
+   
+}
+.pfField > input:focus,.pfField > select:focus, .pfField > textarea:focus{
+    -webkit-box-shadow: 0px 3px 8px 0px rgb(143 143 143 / 33%);
+    -moz-box-shadow: 0px 3px 8px 0px rgb(143 143 143 / 33%);
+    box-shadow: 0px 3px 8px 0px rgb(143 143 143 / 33%);
+}
+.pfField > input[type="checkbox"], .pfField > input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.pfField>input[type="file"]{
+    width: auto;
+    margin-bottom: 0;
+    border: none;
+    outline: none;
+    color:#a7a9ac
+}
+.pfField > input::file-selector-button{
+    display: inline-block;
+        background: #d1d2d4;
+        text-align: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 18px;
+        border: 1px solid #d1d2d4;
+        font-family: HelveticaNeueLTProMd;
+        color: #fff;
+        margin-right: 20px;
+}
+.pfField > label{
+    color: #a7a9ac;
+}
+.pfField > input::placeholder{
+    color: #a7a9ac;
+}
+.uploadedFiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.upldFilCrd {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.upldFilCrd + .upldFilCrd{
+margin-left: 20px;
+}
+.ufcImg {
+    height: 170px;
+    background: #594a41;
+}
+.ufcImg>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ufcFotr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ufcName {
+    font-size: 14px;
+    font-style: italic;
+}
+.anchList {
+    list-style: none;
+}
+
+.alItem>a {
+    color: #000;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.alItem>a:hover, .alItem>a.active {
+    color: #29abe2;
+}
+
+.brdrRight{
+    border-right: 1px solid #e3e3e3;
+}
+.imgSec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgBox {
+    flex: 1 0 auto;
+    height: 130px;
+    background: #cacbcd;
+    margin-right: 20px;
+}
+
+.imgBoxDouble {
+    flex: 2 0 auto;
+    background: #cacbcd;
+}
+.prdctWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prdctCrd {
+    flex: 0 0 calc((100% / 3) - 20px);
+    padding: 10px;
+    /* background: antiquewhite; */
+    text-align: center;
+    border: 1px solid #a7a9ac;
+}
+
+.prdctImg>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.prdctTitl>h4 {
+    font-family: HelveticaNeueLTProMd;
+    font-size: 18px;
 }
